@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JailWatch - Bookings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="span12 text-center">
+                <img src="http://placehold.it/960x100&text=JailWatch Banner">
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand">JailWatch</a>
+                <ul class="nav">
+                    <li class="divider-vertical"></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li class="divider-vertical"></li>
+                    <li class="active"><a href="#">Bookings</a></li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            My Account
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dlabel">
+                            <li><a href="#">My Notifications</a></li>
+                            <li><a href="#">My Watchlist</a></li>
+                            <li><a href="myaccount.html">My Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Users
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dlabel">
+                            <li><a href="#">List Users</a></li>
+                            <li><a href="#">New User</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider-vertical"></li>
+                </ul>
+                <ul class="nav pull-right">
+                    <li><a href="index.html">Logout >></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span3">
+                <h3>Additional Options</h3>
+                <a class="btn btn-block" href="#">Add to watchlist</a>
+            </div>
+            <div class="span9">
+                <form class="form-search">
+                    <input type="text" class="span7 search-query">
+                    <button type="submit" class="btn">Search</button>
+                </form>
+                <h3>Bookings</h3>
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Mugshot</th>
+                            <th>Booking Date</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Race</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="http://placehold.it/100x100" class="img-polaroid"></td>
+                            <td>5/1/2013</td>
+                            <td>John Smith</td>
+                            <td>Male</td>
+                            <td>white</td>
+                            <td>56</td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://placehold.it/100x100" class="img-polaroid"></td>
+                            <td>5/1/2013</td>
+                            <td>John Smith</td>
+                            <td>Male</td>
+                            <td>white</td>
+                            <td>56</td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://placehold.it/100x100" class="img-polaroid"></td>
+                            <td>5/1/2013</td>
+                            <td>John Smith</td>
+                            <td>Male</td>
+                            <td>white</td>
+                            <td>56</td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://placehold.it/100x100" class="img-polaroid"></td>
+                            <td>5/1/2013</td>
+                            <td>John Smith</td>
+                            <td>Male</td>
+                            <td>white</td>
+                            <td>56</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <ul>
+                        <li><a href="#">Prev</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /container -->
+
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+   </script>
+  </body>
+</html>

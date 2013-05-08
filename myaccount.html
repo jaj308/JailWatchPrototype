@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>JailWatch</title>
+    <title>JailWatch - My Account</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -36,9 +36,9 @@
                     <li class="divider-vertical"></li>
                     <li><a href="home.html">Home</a></li>
                     <li class="divider-vertical"></li>
-                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="#">Bookings</a></li>
                     <li class="divider-vertical"></li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             My Account
                             <b class="caret"></b>
@@ -46,7 +46,7 @@
                         <ul class="dropdown-menu" role="menu" aria-labelledby="dlabel">
                             <li><a href="#">My Notifications</a></li>
                             <li><a href="#">My Watchlist</a></li>
-                            <li><a href="myaccount.html">My Information</a></li>
+                            <li class="active"><a href="myaccount.html">My Information</a></li>
                         </ul>
                     </li>
                     <li class="divider-vertical"></li>
@@ -62,27 +62,54 @@
                     </li>
                     <li class="divider-vertical"></li>
                 </ul>
+                <ul class="nav pull-right">
+                    <li><a href="index.html">Logout >></a></li>
+                </ul>
             </div>
         </div>
         <div class="row">
-            <div class="span3"></div>
+            <div class="span3">
+                <h3>Additional Options</h3>
+                <a class="btn btn-block" href="#">My Notifications</a>
+                <a class="btn btn-block" href="#">My Watchlist</a>
+                <a class="btn btn-block" href="#">My Information</a>
+            </div>
             <div class="span9">
-                <form action="home.html">
+                <form>
                     <fieldset>
-                        <legend>Please Sign In</legend>
-                        <label>Username</label>
-                        <input class="input-xxlarge" type="text" placeholder="Username">
+                        <legend>Edit My Information</legend>
+                        <label>Email Address</label>
+                        <input class="input-xxlarge" type="text">
                         <label>Password</label>
-                        <input class="input-xxlarge" type="text" placeholder="Password">
+                        <input class="input-xxlarge" type="text">
+                        <label>Role</label>
+                        <select>
+                            <option>admin</option>
+                        </select>
+                        <label>Network</label>
+                        <select>
+                            <option>MCSO</option>
+                        </select>
                         <label class="checkbox">
-                            <input type="checkbox">Remember Me
+                            <input type="checkbox"> Email Notifications
                         </label>
-                        <button type="submit" class="btn btn-primary">Sign In</button>
+                        <label class="checkbox">
+                            <input type="checkbox">Text Notifications
+                        </label>
+                        <label>First Name</label>
+                        <input class="input-xxlarge" type="text">
+                        <label>Middle Name</label>
+                        <input class="input-xxlarge" type="text">
+                        <label>Last Name</label>
+                        <input class="input-xxlarge" type="text">
+                        <div>
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                            <button type="submit" class="btn">Cancel</button>
+                        </div>
                     </fieldset>
                 </form>
             </div>
         </div>
-
     </div> <!-- /container -->
 
     <!-- Javascript
